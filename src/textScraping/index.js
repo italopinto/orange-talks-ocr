@@ -2,7 +2,7 @@ const path = require('path');
 const vision = require("@google-cloud/vision");
 
 const client = new vision.ImageAnnotatorClient({
-  keyFilename: path.resolve('src', 'config', 'keys.json'),
+  keyFilename: path.resolve('src', 'config', '<CHAVE_DO_GOOGLE_CLOUD>.json'),
 })
 
 /**
@@ -45,11 +45,5 @@ async function textScraping(image){
     throw error;
   }
 }
-
-/**
- textScraping(path.resolve('images', 'hello.png'))
-   .then(data => console.log(data))
-   .catch(error => console.error(error))
- */
 
 module.exports = textScraping;
