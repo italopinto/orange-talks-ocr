@@ -1,0 +1,29 @@
+{
+  "name": "orange-talks-ocr",
+  "version": "1.0.0",
+  "description": "orange-talks-ocr",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src\\server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italopinto/orange-talks-ocr.git"
+  },
+  "keywords": [],
+  "author": "Ítalo Pinto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/italopinto/orange-talks-ocr/issues"
+  },
+  "homepage": "https://github.com/italopinto/orange-talks-ocr#readme",
+  "dependencies": {
+    "@google-cloud/vision": "^2.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
